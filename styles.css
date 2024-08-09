@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f8fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    text-align: center;
+    border-radius: 12px;
+    padding: 40px 30px;
+    overflow: hidden;
+}
+
+.header {
+    color: #3a3a3a;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    animation: slideDown 0.8s ease-out;
+    font-weight: bold;
+}
+
+.input-search {
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#input:focus {
+    border-color: #7ea0f3;
+    box-shadow: 0 0 5px rgba(126, 160, 243, 0.4);
+}
+
+#search {
+    background-color: #7ea0f3;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#search:hover {
+    background-color: #5e8be0;
+    transform: translateY(-3px);
+}
+
+.output {
+    margin-top: 30px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.output p {
+    font-size: 1.2rem;
+    color: #444;
+    margin: 10px 0;
+}
+
+.output .example {
+    font-style: italic;
+    color: #666;
+    font-size: 1rem;
+    margin-top: 5px;
+    text-align: left;
+}
+
+/* Animations */
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
